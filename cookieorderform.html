@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  <h1 id="title"> Cookie Order Sheet  </h1>
+</head>
+
+<body>
+  <p id="description">This is a survey form for my Code Camp Certification Project
+</p>
+<form id="survey-form">
+  <fieldset>
+ 	<div class="name"><label for="name" id="name-label">Name:<input type="text" required id="name" placeholder="Jane Dough"></label>
+	</div>
+ 	<div class="email>"
+	<label for="email" id="email-label">Email: <input type="email" required id="email" placeholder="JaneDough@Example.com"></label>
+  	</div>
+  	<div class="telephone">
+	<label for="number-label" id="number-label">Phone: <input type="tel" id="telephoneNumber"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+required> 
+	</label>
+        </div>
+  <div class="flavor">
+    <label for="flavor" id="flavor">Flavor:<select name="Cookie Flavors" id="dropdown" required></label>
+     <option value="Chocolate Chip">Chocolate Chip</option>
+     <option value="Lemon White Choc.">Lemon White Chocolate Chip</option>
+     <option value="Sugar">Plain Sugar Cookie</option>
+     <option value="oatmeal">Oatmeal</option>
+    <div class="batches">
+<label for="batches" id="batchAmount">Batch Amount:<input type="number" required id="number" min="1" max="5" placeholder="dozen">
+</label>
+</div> 
+  </fieldset>
+  <fieldset>  <div class="vegan">
+  <label for="vegan" id="vegan">Do you require vegan cookies? </label>
+  <label for="yes" id="yes"><input type="radio" name="yes" value="yes" >Yes</label>
+  <label for="no" id="no"><input type="radio" name="no" value="no" checked> No</label>
+  </div>
+  <div class="allergies">
+  <label for="foodAllergies" id="allergies">Do you have any food allergies?</label>
+  <label for="nutAllergy"><input type="checkbox" id="nut" value="1">Nut Allergy</label>
+  <label for="soyAllergy"
+id="soy"><input type="checkbox" value="1">Soy Allergy</label>
+  <label for="glutenAllergy" id="gluten"><input type="checkbox" value="1">Gluten Allergy</label>
+  </div>
+  </fieldset>
+  <fieldset>
+    <div class= "gifting">
+  <label for="gift-status" id="gift">Is this a gift for someone else?</label>
+  <label for="yes" id="yes"><input type="radio" name="yes" value="1" >Yes</label>
+  <label for="no" id="no"><input type="radio" name="no" value="0" checked> No</label>
+  </div>
+  <div class="message"
+  <label for="message" id="message">If so, would you like to include a custom Message?</label></div><div class="text">
+<textarea id="customMessage" rows="10" cols="30"> </textarea></div>
+  <input type="submit" id="submit" value="order">
+  </fieldset>
+  </form>
+</body>
+</html>

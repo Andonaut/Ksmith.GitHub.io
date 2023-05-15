@@ -1,0 +1,40 @@
+h1 {
+  font-family: georgia, Lucida Bright, Arial;
+}
+
+body {
+background-color:
+#FED797;
+}
+fieldset {
+  border: none;
+  padding: 1rem 0;
+  border-bottom: 3px solid #E17E76;
+}
+
+label {
+  font: Lucida,Bright, Arial;
+  display: block;
+  margin: 0.5rem 0;
+}
+.name, .email, .phone, .flavor, .vegan, .allergies, .gifting, .text {
+  margin: 1em auto;
+}
+.text {
+display:block;
+padding: 1em auto;
+}
+input[type="submit"] {
+  display: block;
+  width: 40%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  font-family: georgia, Lucida Bright, Arial;
+background-color: #E3BAA8;
+  border-color: #AA7B6F;
+  min-width: 100px;
+}
+fieldset:last-of-type {
+  border-bottom: none;
+}
